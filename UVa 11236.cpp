@@ -3,15 +3,21 @@
     
     int v[4];
     
+    // a is less than 1.26 
+    // because 1.26 ^ 4 > 20.00 
+    
+    // b , c , d are always greater than or equal to a
+    // similarly c , d are greater tha or equal to a
+    
     int main()
     {
         for(int a = 1; a < 126; ++a){
             
-            int blim = (2002 - a) / 3;
+            int blim = (2002 - a) / 3;   // blimit 
             
             for(int b = a; b <= blim; ++b){
                 
-                int clim = (2001 - (a + b)) / 2;
+                int clim = (2001 - (a + b)) / 2;  // climit
                 
                 for(int c = b; c <= clim; ++c){
                     
